@@ -20,7 +20,7 @@ namespace MagazinCosmetiki1
         public int CountryID { get; set; }
         public Nullable<decimal> Price { get; set; }
     
-        public virtual Categories Categories { get; set; }
-        public virtual Country Country { get; set; }
+        public virtual Categories Categories { private get; set; }
+        public virtual Country Country { private get; set; }
     }
 }
